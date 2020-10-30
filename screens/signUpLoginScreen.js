@@ -4,7 +4,7 @@ import { View, StyleSheet, Text, Image, TouchableOpacity,TextInput, Alert,Modal,
 import db from '../config';
 import firebase from 'firebase';
 
-export default class WelcomeScreen extends Component {
+export default class WelcomeScreen extends React.Component {
   constructor(){
     super()
     this.state={
@@ -22,7 +22,7 @@ export default class WelcomeScreen extends Component {
   userLogin = (emailId, password)=>{
     firebase.auth().signInWithEmailAndPassword(emailId, password)
     .then(()=>{
-      return Alert.alert("Successfully Login")
+      return this.props.navigation.navigate("Home")
     })
     .catch((error)=> {
       var errorCode = error.code;
