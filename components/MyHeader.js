@@ -6,8 +6,9 @@ const MyHeader = props => {
   return (
     <Header
     leftComponent={<Icon name='bars' type='font-awesome' color='#696969'  onPress={() => props.navigation.toggleDrawer()}/>}
-      centerComponent={{ text: props.title, style: { color: 'black', fontSize:20,fontWeight:"bold", } }}
-      backgroundColor = "lightpink"
+      centerComponent={{ text: props.title, style: { color: 'black', fontSize:20,fontWeight:"bold" } }}
+      backgroundColor = "#fff68f"
+    
     />
   );
 };

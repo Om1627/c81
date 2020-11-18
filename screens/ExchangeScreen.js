@@ -51,7 +51,7 @@ import {
   
     render(){
       return(
-          <View style={{flex:1,backgroundColor:'#ab7173'}}>
+          <View style={{flex:1,backgroundColor:'#325B84'}}>
             <MyHeader title="Request Book" navigation ={this.props.navigation}/>
               <KeyboardAvoidingView style={styles.keyBoardStyle}>
                 <TextInput
@@ -103,6 +103,7 @@ import {
       borderWidth:1,
       marginTop:20,
       padding:10,
+      color:'yellow'
     },
     button:{
       width:"75%",
